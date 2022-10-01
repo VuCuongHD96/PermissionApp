@@ -40,12 +40,18 @@ struct PermissionKey {
         static let inUseKey = "NSLocationWhenInUseUsageDescription"
     }
     
+    private struct Siri {
+        static let key = "NSSiriUsageDescription"
+    }
+    
     static func transfrom(key: String) -> PermissionType? {
         switch key {
         case Location.inUseKey:
             return LocationPermissionObject()
         case Contacts.key:
             return ContactPermissionObject()
+        case Siri.key:
+            return SiriPermissionObject()
         default:
             return nil
         }

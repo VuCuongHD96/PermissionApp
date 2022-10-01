@@ -27,6 +27,7 @@
 		A4F7088B28C9E65300A91AD4 /* PermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F7088928C9E65300A91AD4 /* PermissionViewController.xib */; };
 		A4F7088E28CA021200A91AD4 /* PermissionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7088C28CA021200A91AD4 /* PermissionHeaderCell.swift */; };
 		A4F7088F28CA021200A91AD4 /* PermissionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F7088D28CA021200A91AD4 /* PermissionHeaderCell.xib */; };
+		A4FA666728E8821B0045FC47 /* SiriPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA666628E8821B0045FC47 /* SiriPermissionObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		A4F7088928C9E65300A91AD4 /* PermissionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionViewController.xib; sourceTree = "<group>"; };
 		A4F7088C28CA021200A91AD4 /* PermissionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionHeaderCell.swift; sourceTree = "<group>"; };
 		A4F7088D28CA021200A91AD4 /* PermissionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionHeaderCell.xib; sourceTree = "<group>"; };
+		A4FA666628E8821B0045FC47 /* SiriPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriPermissionObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +115,6 @@
 			children = (
 				A457DFF628C8991500575491 /* PermissionType.swift */,
 				A42BE3C028CC76F0008BBCBD /* PermissionKey.swift */,
-				A434872428C9A61C00AEE627 /* LocationPermissionObject.swift */,
-				A4DAFEB028D7632000C21FCE /* ContactPermissionObject.swift */,
-				A434872628C9A64100AEE627 /* NotificationPermissionObject.swift */,
-				A487CAFF28D0858A00D7FD61 /* BluetoothPermissionObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				A47F738B28CAE052008D57A3 /* PermissionManager.swift */,
+				A4FA666528E881940045FC47 /* PermissionObject */,
 				A457DFF328C898ED00575491 /* Model */,
 				A47F738E28CAE6B5008D57A3 /* CustomView */,
 				A47F738D28CAE675008D57A3 /* Scenes */,
@@ -149,6 +148,18 @@
 				A47F738F28CAE6F9008D57A3 /* XibSceneBase.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		A4FA666528E881940045FC47 /* PermissionObject */ = {
+			isa = PBXGroup;
+			children = (
+				A434872428C9A61C00AEE627 /* LocationPermissionObject.swift */,
+				A4DAFEB028D7632000C21FCE /* ContactPermissionObject.swift */,
+				A434872628C9A64100AEE627 /* NotificationPermissionObject.swift */,
+				A487CAFF28D0858A00D7FD61 /* BluetoothPermissionObject.swift */,
+				A4FA666628E8821B0045FC47 /* SiriPermissionObject.swift */,
+			);
+			path = PermissionObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				A450306428C8532D006C8BC5 /* ViewController.swift in Sources */,
 				A434872728C9A64100AEE627 /* NotificationPermissionObject.swift in Sources */,
 				A47F738C28CAE052008D57A3 /* PermissionManager.swift in Sources */,
+				A4FA666728E8821B0045FC47 /* SiriPermissionObject.swift in Sources */,
 				A434872528C9A61C00AEE627 /* LocationPermissionObject.swift in Sources */,
 				A450306028C8532D006C8BC5 /* AppDelegate.swift in Sources */,
 			);
