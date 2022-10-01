@@ -34,10 +34,9 @@ class LocationPermissionObject: NSObject, PermissionType {
     func requestPermission() {
         let status = locationManager.authorizationStatus
         if status == .authorizedAlways || status == .authorizedWhenInUse {
-            permissionHandler?(.allowed)
+            print("Location author")
         } else {
             locationManager.requestWhenInUseAuthorization()
-            permissionHandler?(.notAllow)
         }
     }
 }

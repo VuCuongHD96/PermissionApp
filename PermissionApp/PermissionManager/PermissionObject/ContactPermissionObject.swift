@@ -19,9 +19,7 @@ final class ContactPermissionObject: PermissionType {
   
     func requestPermission() {
         contact.requestAccess(for: .contacts) { [weak self] result, _ in
-            guard let self = self else {
-                return
-            }
+            guard let self = self else { return }
             DispatchQueue.main.async {
                 if result {
                     self.permissionHandler?(.allowed)
