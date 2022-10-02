@@ -22,6 +22,7 @@
 		A47F738C28CAE052008D57A3 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F738B28CAE052008D57A3 /* PermissionManager.swift */; };
 		A47F739028CAE6F9008D57A3 /* XibSceneBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F738F28CAE6F9008D57A3 /* XibSceneBase.swift */; };
 		A487CB0028D0858A00D7FD61 /* BluetoothPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A487CAFF28D0858A00D7FD61 /* BluetoothPermissionObject.swift */; };
+		A4A4D1A128E983AA00806D6E /* TrackingPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4D1A028E983AA00806D6E /* TrackingPermissionObject.swift */; };
 		A4DAFEB128D7632000C21FCE /* ContactPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAFEB028D7632000C21FCE /* ContactPermissionObject.swift */; };
 		A4F7088A28C9E65300A91AD4 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7088828C9E65300A91AD4 /* PermissionViewController.swift */; };
 		A4F7088B28C9E65300A91AD4 /* PermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F7088928C9E65300A91AD4 /* PermissionViewController.xib */; };
@@ -49,6 +50,7 @@
 		A47F738B28CAE052008D57A3 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
 		A47F738F28CAE6F9008D57A3 /* XibSceneBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibSceneBase.swift; sourceTree = "<group>"; };
 		A487CAFF28D0858A00D7FD61 /* BluetoothPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPermissionObject.swift; sourceTree = "<group>"; };
+		A4A4D1A028E983AA00806D6E /* TrackingPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPermissionObject.swift; sourceTree = "<group>"; };
 		A4DAFEB028D7632000C21FCE /* ContactPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPermissionObject.swift; sourceTree = "<group>"; };
 		A4F7088828C9E65300A91AD4 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		A4F7088928C9E65300A91AD4 /* PermissionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionViewController.xib; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				A434872628C9A64100AEE627 /* NotificationPermissionObject.swift */,
 				A487CAFF28D0858A00D7FD61 /* BluetoothPermissionObject.swift */,
 				A4FA666628E8821B0045FC47 /* SiriPermissionObject.swift */,
+				A4A4D1A028E983AA00806D6E /* TrackingPermissionObject.swift */,
 			);
 			path = PermissionObject;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				A450306428C8532D006C8BC5 /* ViewController.swift in Sources */,
 				A434872728C9A64100AEE627 /* NotificationPermissionObject.swift in Sources */,
 				A47F738C28CAE052008D57A3 /* PermissionManager.swift in Sources */,
+				A4A4D1A128E983AA00806D6E /* TrackingPermissionObject.swift in Sources */,
 				A4FA666728E8821B0045FC47 /* SiriPermissionObject.swift in Sources */,
 				A434872528C9A61C00AEE627 /* LocationPermissionObject.swift in Sources */,
 				A450306028C8532D006C8BC5 /* AppDelegate.swift in Sources */,
