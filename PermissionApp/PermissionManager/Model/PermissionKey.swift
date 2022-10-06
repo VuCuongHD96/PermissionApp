@@ -7,65 +7,41 @@
 
 import Foundation
 
-struct PermissionKey {
+enum PermissionKey: String {
     
-    private struct Blutooth {
-        static let alwaysKey = "NSBluetoothAlwaysUsageDescription"
-        static let peripheralKey = "NSBluetoothPeripheralUsageDescription"
-    }
+    case blutooth = "NSBluetoothAlwaysUsageDescription"
+    case calendar = "NSCalendarsUsageDescription"
+    case camera = "NSCameraUsageDescription"
+    case contacts = "NSContactsUsageDescription"
+    case faceID = "NSFaceIDUsageDescription"
+    case health = "NSHealthUpdateUsageDescription"
+    case location = "NSLocationAlwaysAndWhenInUseUsageDescription"
+    case siri = "NSSiriUsageDescription"
+    case tracking = "NSUserTrackingUsageDescription"
+    case reminer = "NSRemindersUsageDescription"
     
-    private struct Calendar {
-        static let key = "NSCalendarsUsageDescription"
-    }
-    
-    private struct Camera {
-        static let key = "NSCameraUsageDescription"
-    }
-    
-    private struct Contacts {
-        static let key = "NSContactsUsageDescription"
-    }
-    
-    private struct FaceID {
-        static let key = "NSFaceIDUsageDescription"
-    }
-    
-    private struct Health {
-        static let updateKey = "NSHealthUpdateUsageDescription"
-        static let shareKey = "NSHealthShareUsageDescription"
-    }
-    
-    private struct Location {
-        static let alwaysKey = "NSLocationAlwaysAndWhenInUseUsageDescription"
-        static let inUseKey = "NSLocationWhenInUseUsageDescription"
-    }
-    
-    private struct Siri {
-        static let key = "NSSiriUsageDescription"
-    }
-    
-    private struct Tracking {
-        static let key = "NSUserTrackingUsageDescription"
-    }
-    
-    private struct Reminer {
-        static let key = "NSRemindersUsageDescription"
-    }
-    
-    static func transfrom(key: String) -> PermissionType? {
-        switch key {
-        case Location.inUseKey:
-            return LocationPermissionObject()
-        case Contacts.key:
-            return ContactPermissionObject()
-        case Siri.key:
-            return SiriPermissionObject()
-        case Tracking.key:
-            return TrackingPermissionObject()
-        case Reminer.key:
-            return RemindersPermissionObject()
-        default:
+    var permissionObject: PermissionType? {
+        switch self {
+        case .blutooth:
             return nil
+        case .calendar:
+            return nil
+        case .camera:
+            return nil
+        case .contacts:
+            return ContactPermissionObject()
+        case .faceID:
+            return nil
+        case .health:
+            return nil
+        case .location:
+            return LocationPermissionObject()
+        case .siri:
+            return SiriPermissionObject()
+        case .tracking:
+            return TrackingPermissionObject()
+        case .reminer:
+            return RemindersPermissionObject()
         }
     }
 }
