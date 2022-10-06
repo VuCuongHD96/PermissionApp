@@ -32,7 +32,7 @@ struct PermissionManager {
     func readPermissionKey() -> [PermissionType]? {
         let keys = Bundle.main.infoDictionary?.keys
         let permissionObjectArray = keys?.compactMap { key in
-            return PermissionKey.transfrom(key: key)
+            return PermissionKey(rawValue: key)?.permissionObject
         }
         return permissionObjectArray
     }
