@@ -48,6 +48,10 @@ struct PermissionKey {
         static let key = "NSUserTrackingUsageDescription"
     }
     
+    private struct Reminer {
+        static let key = "NSRemindersUsageDescription"
+    }
+    
     static func transfrom(key: String) -> PermissionType? {
         switch key {
         case Location.inUseKey:
@@ -58,6 +62,8 @@ struct PermissionKey {
             return SiriPermissionObject()
         case Tracking.key:
             return TrackingPermissionObject()
+        case Reminer.key:
+            return RemindersPermissionObject()
         default:
             return nil
         }
