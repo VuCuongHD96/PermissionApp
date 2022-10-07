@@ -4,6 +4,8 @@
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Microphone description</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Motion description</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Photo desciption</string>
 	<key>NSRemindersUsageDescription</key>

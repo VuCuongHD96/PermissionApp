@@ -12,6 +12,7 @@
 		A434872728C9A64100AEE627 /* NotificationPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434872628C9A64100AEE627 /* NotificationPermissionObject.swift */; };
 		A441C6D828F0698D009A04FE /* PhotoPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441C6D728F0698D009A04FE /* PhotoPermissionObject.swift */; };
 		A441C6DC28F07360009A04FE /* MicrophonePermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441C6DB28F07360009A04FE /* MicrophonePermissionObject.swift */; };
+		A441C6DA28F07009009A04FE /* MotionPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441C6D928F07009009A04FE /* MotionPermissionObject.swift */; };
 		A450306028C8532D006C8BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450305F28C8532D006C8BC5 /* AppDelegate.swift */; };
 		A450306428C8532D006C8BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450306328C8532D006C8BC5 /* ViewController.swift */; };
 		A450306728C8532D006C8BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A450306528C8532D006C8BC5 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		A434872628C9A64100AEE627 /* NotificationPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionObject.swift; sourceTree = "<group>"; };
 		A441C6D728F0698D009A04FE /* PhotoPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPermissionObject.swift; sourceTree = "<group>"; };
 		A441C6DB28F07360009A04FE /* MicrophonePermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophonePermissionObject.swift; sourceTree = "<group>"; };
+		A441C6D928F07009009A04FE /* MotionPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionPermissionObject.swift; sourceTree = "<group>"; };
 		A450305C28C8532D006C8BC5 /* PermissionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermissionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A450305F28C8532D006C8BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A450306328C8532D006C8BC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				A441C6DB28F07360009A04FE /* MicrophonePermissionObject.swift */,
 				A441C6D728F0698D009A04FE /* PhotoPermissionObject.swift */,
 				A4772A0028F1D8D200EEC478 /* CalendarPermissionObject.swift */,
+				A441C6D928F07009009A04FE /* MotionPermissionObject.swift */,
 				A4E0AF4628EF134A00E8A8AA /* RemindersPermissionObject.swift */,
 			);
 			path = PermissionObject;
@@ -253,6 +256,7 @@
 			files = (
 				A457DFF228C87BB900575491 /* PermissionButton.swift in Sources */,
 				A47F739028CAE6F9008D57A3 /* XibSceneBase.swift in Sources */,
+				A441C6DA28F07009009A04FE /* MotionPermissionObject.swift in Sources */,
 				A42BE3C128CC76F0008BBCBD /* PermissionKey.swift in Sources */,
 				A487CB0028D0858A00D7FD61 /* BluetoothPermissionObject.swift in Sources */,
 				A4F7088A28C9E65300A91AD4 /* PermissionViewController.swift in Sources */,
