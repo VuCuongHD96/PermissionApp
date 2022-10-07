@@ -18,7 +18,8 @@ enum PermissionKey: String {
     case location = "NSLocationAlwaysAndWhenInUseUsageDescription"
     case siri = "NSSiriUsageDescription"
     case tracking = "NSUserTrackingUsageDescription"
-    case reminer = "NSRemindersUsageDescription"
+    case reminder = "NSRemindersUsageDescription"
+    case photo = "NSPhotoLibraryUsageDescription"
     
     var permissionObject: PermissionType? {
         switch self {
@@ -40,8 +41,10 @@ enum PermissionKey: String {
             return SiriPermissionObject()
         case .tracking:
             return TrackingPermissionObject()
-        case .reminer:
+        case .reminder:
             return RemindersPermissionObject()
+        case .photo:
+            return PhotoPermissionObject()
         }
     }
 }
