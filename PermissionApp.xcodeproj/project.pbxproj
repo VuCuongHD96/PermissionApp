@@ -22,6 +22,7 @@
 		A457DFF228C87BB900575491 /* PermissionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457DFF128C87BB900575491 /* PermissionButton.swift */; };
 		A457DFF728C8991500575491 /* PermissionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457DFF628C8991500575491 /* PermissionType.swift */; };
 		A4772A0128F1D8D200EEC478 /* CalendarPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4772A0028F1D8D200EEC478 /* CalendarPermissionObject.swift */; };
+		A4772A0328F1DF3700EEC478 /* HeathPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4772A0228F1DF3700EEC478 /* HeathPermissionObject.swift */; };
 		A47F738C28CAE052008D57A3 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F738B28CAE052008D57A3 /* PermissionManager.swift */; };
 		A47F739028CAE6F9008D57A3 /* XibSceneBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F738F28CAE6F9008D57A3 /* XibSceneBase.swift */; };
 		A487CB0028D0858A00D7FD61 /* BluetoothPermissionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A487CAFF28D0858A00D7FD61 /* BluetoothPermissionObject.swift */; };
@@ -54,6 +55,7 @@
 		A457DFF128C87BB900575491 /* PermissionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionButton.swift; sourceTree = "<group>"; };
 		A457DFF628C8991500575491 /* PermissionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionType.swift; sourceTree = "<group>"; };
 		A4772A0028F1D8D200EEC478 /* CalendarPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPermissionObject.swift; sourceTree = "<group>"; };
+		A4772A0228F1DF3700EEC478 /* HeathPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeathPermissionObject.swift; sourceTree = "<group>"; };
 		A47F738B28CAE052008D57A3 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
 		A47F738F28CAE6F9008D57A3 /* XibSceneBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibSceneBase.swift; sourceTree = "<group>"; };
 		A487CAFF28D0858A00D7FD61 /* BluetoothPermissionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPermissionObject.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				A4A4D1A028E983AA00806D6E /* TrackingPermissionObject.swift */,
 				A441C6DB28F07360009A04FE /* MicrophonePermissionObject.swift */,
 				A441C6D728F0698D009A04FE /* PhotoPermissionObject.swift */,
+				A4772A0228F1DF3700EEC478 /* HeathPermissionObject.swift */,
 				A4772A0028F1D8D200EEC478 /* CalendarPermissionObject.swift */,
 				A4E0AF4628EF134A00E8A8AA /* RemindersPermissionObject.swift */,
 			);
@@ -253,6 +256,7 @@
 			files = (
 				A457DFF228C87BB900575491 /* PermissionButton.swift in Sources */,
 				A47F739028CAE6F9008D57A3 /* XibSceneBase.swift in Sources */,
+				A4772A0328F1DF3700EEC478 /* HeathPermissionObject.swift in Sources */,
 				A42BE3C128CC76F0008BBCBD /* PermissionKey.swift in Sources */,
 				A487CB0028D0858A00D7FD61 /* BluetoothPermissionObject.swift in Sources */,
 				A4F7088A28C9E65300A91AD4 /* PermissionViewController.swift in Sources */,
