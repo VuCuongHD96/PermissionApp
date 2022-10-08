@@ -27,7 +27,7 @@ enum PermissionKey: String {
         case .blutooth:
             return nil
         case .calendar:
-            return nil
+            return CalendarPermissionObject()
         case .camera:
             return nil
         case .contacts:
