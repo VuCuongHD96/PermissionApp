@@ -7,46 +7,22 @@
 
 import CoreBluetooth
 
-protocol BluetoothManagerDelegate: class {
-    func sendBluetoothStatus(_ status: Bool)
-}
-
-class BluetoothPermissionObject: NSObject {
+class BluetoothPermissionObject: NSObject, PermissionType {
     
-    var manager = CBCentralManager()
-    weak var bluetoothManagerDelegate: BluetoothManagerDelegate?
+    var permissionHandler: PermissionHandler?
+    var name: String = "Bluetooth"
+    var summany: String = "Let connect with some device"
+    var emptyImage: String = "bluetooth_empty"
+    var fullImage: String = "bluetooth_full"
     
-    override init() {
-        super.init()
-        manager.delegate = self
+    func requestPermission() {
     }
-}
-
-extension BluetoothPermissionObject: CBCentralManagerDelegate {
     
-    @objc func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        
-        switch central.state {
-        case .unknown:
-            print("------ debug ------- unknown")
-        case .resetting:
-            print("------ debug ------- resetting")
-        case .unsupported:
-            print("------ debug ------- unsupported")
-        case .unauthorized:
-            print("------ debug ------- unauthorized")
-        case .poweredOff:
-            print("------ debug ------- poweredOff")
-        case .poweredOn:
-            print("------ debug ------- poweredOn")
-        @unknown default:
-            print("------ debug ------- default")
-        }
-        
-        if central.state == .poweredOn {
-            bluetoothManagerDelegate?.sendBluetoothStatus(true)
+    func checkStatus(handler: @escaping (PermissionStatus) -> Void) {
+        if CBCentralManager.authorization == .allowedAlways {
+            handler(.allowed)
         } else {
-            bluetoothManagerDelegate?.sendBluetoothStatus(false)
+            handler(.notAllow)
         }
     }
 }

@@ -25,7 +25,7 @@ enum PermissionKey: String {
     var permissionObject: PermissionType? {
         switch self {
         case .blutooth:
-            return nil
+            return BluetoothPermissionObject()
         case .calendar:
             return CalendarPermissionObject()
         case .camera:
